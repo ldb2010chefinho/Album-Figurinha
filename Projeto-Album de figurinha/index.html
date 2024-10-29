@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album de figurinha</title>    
+    <style>
+      .product-card {
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin: 10px;
+        border-radius: 8px;
+        max-width: 250px;
+        text-align: center;
+      }
+      .product-card img {
+        max-width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      
+    </style>
+</head>
+<body>
+    
+  <template id="product-template">
+    <div class="product-card">
+      <img src="" alt="Imagem do Produto" class="product-image">
+      <h3 class="product-name"></h3>
+      <p class="product-description"></p>
+      
+    </div>
+  </template>
+
+  
+  <div id="products-container"></div>
+  <script src="template.js" defer></script>
+</body>
+</html>
